@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="H:/A_Feb_2024/Selenium/SDETSelenium">
+
+        <groups>
+            <run>
+                <exclude name="sanity"/>
+
+            </run>
+        </groups>
+
+
+        <classes>
+            
+            <class name="testNG.part_01.FirstTestCase">
+                <methods>
+                    <include name="setup"/>
+                    <include name="login"/>
+                    <include name="teardown"/>
+                </methods>
+            </class>
+            <class name="testNG.part_01.FirstTestCase1">
+                <methods>
+                    <include name="setup"/>
+                    <include name="login"/>
+                    <include name="teardown"/>
+                </methods>
+            </class>
+            
+            <class name="testNG.part_02.SecondTestCase"></class>
+
+            <class name="testNG.part_06.GroupingExample"></class>
+
+
+
+        </classes>
+
+    </test>
+</suite>
